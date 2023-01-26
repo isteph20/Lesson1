@@ -8,14 +8,12 @@
         <style>
             p {
                 font-family: Roboto, Arial;
-                margin: 0px;
+                margin-bottom: 0px;
+                margin-top: 0px;
             }
-            .htmlcss ,
-            .htmlcss1 ,
-            .htmlcss2 {
-                border-radius: 20px;
-                width: 300px;
-                display: block;
+            .video-thumbnail {
+                width: 100%;
+                border-radius: 25px;
 
             }
             .textbox {
@@ -23,20 +21,9 @@
                 margin-left: 12px;
                 border-radius: 12px;
                 border-width: 1px;
-                display: block;
-                
-                
+                display: block; 
             }
 
-            .fullcourse ,
-            .fullcourse1 ,
-            .fullcourse2 ,
-            .fullcourse3 { 
-                display: inline-block;
-                width: 300px;
-                vertical-align: top;
-                margin-right: 12px;
-            }
             .youtuber-logo ,
             .youtuber-logo1 ,
             .video-desc ,
@@ -56,8 +43,7 @@
                 vertical-align: top;
                 padding-left: 10px;
             }
-            .video ,
-            .video1 {
+            .video-title {
                 font-weight: 600;
                 font-size: 14px;
                 padding-top: 12px;
@@ -78,10 +64,13 @@
             .views1 {
                 padding-top: 4px;
             }
-            .bodybackground {}
-                
-            
-            
+
+            .video-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 16px;
+                row-gap: 40px;
+            }
         </style>
         <title>
             Youtube
@@ -91,76 +80,78 @@
     <body class="bodybackground">
         <input class="textbox" type="text" placeholder="Search">
         
-        <div class="fullcourse">
-            <div>
-                <img class="htmlcss" src="thumbnails/hq720.webp">
-            </div>
+        <div class="video-grid">
+            <div class="recommendation">
                 <div>
-                    <div class="youtuber-logo">
-                        <img class="classyoutuberlogo" src="youtubers/youtuber1.jpg" alt="Supersimpledevslogo">
-                    </div>
-                        <div class="video-desc">
-                            <p class="video">
-                                HTML & CSS Full Course - Beginner to Pro (2022)
-                            </p>
-                            <p class="subscriber">
-                                SuperSimpleDevs
-                            </p>
-                            <p class="views">
-                                2.5M views &middot; 9 months ago
-                            </p>
-                        </div>
-                </div>               
-        </div>
-
-        <div class="fullcourse1">
-            <div>
-                <img class="htmlcss1" src="thumbnails/thumb2.jpg">
-            </div>            
-                <div>
-                    <div class="youtuber-logo1">
-                        <img class="classyoutuberlogo1" src="youtubers/youtuber2.jpg" alt="aperturephoto">
-                    </div>
-                        <div class="video-desc1">
-                            <p class="video1">
-                                The History of The Entire Universe in 10 Minutes
-                            </p>
-                            <p class="subscriber1">
-                                Aperture
-                            </p>
-                            <p class="views1">
-                                407K views &middot; 11 days ago 
-                            </p>
-                        </div>
+                    <img class="video-thumbnail" src="thumbnails/hq720.webp">
                 </div>
-            
-        </div>
+                    <div>
+                        <div class="youtuber-logo">
+                            <img class="classyoutuberlogo" src="youtubers/youtuber1.jpg" alt="Supersimpledevslogo">
+                        </div>
+                            <div class="video-desc">
+                                <p class="video-title">
+                                    HTML & CSS Full Course - Beginner to Pro (2022)
+                                </p>
+                                <p class="subscriber">
+                                    SuperSimpleDevs
+                                </p>
+                                <p class="views">
+                                    2.5M views &middot; 9 months ago
+                                </p>
+                            </div>
+                    </div>               
+            </div>
 
-        <div class="fullcourse2">
-            <img class="htmlcss2" src="thumbnails/thumb2.jpg">
+            <div class="recommendation">
+                <div>
+                    <img class="video-thumbnail" src="thumbnails/thumb2.jpg">
+                </div>            
+                    <div>
+                        <div class="youtuber-logo1">
+                            <img class="classyoutuberlogo1" src="youtubers/youtuber2.jpg" alt="aperturephoto">
+                        </div>
+                            <div class="video-desc1">
+                                <p class="video-title">
+                                    The History of The Entire Universe in 10 Minutes
+                                </p>
+                                <p class="subscriber1">
+                                    Aperture
+                                </p>
+                                <p class="views1">
+                                    407K views &middot; 11 days ago 
+                                </p>
+                            </div>
+                    </div>
                 
-            <p class="video2">
-                The History of The Entire Universe in 10 Minutes
-            </p>
-            <p class="subscriber2">
-                 Aperture
-            </p>
-            <p class="views2">
-                407K views &middot; 11 days ago 
-            </p>
             </div>
-        <div class="fullcourse3">
-            <img class="htmlcss3" src="thumbnails/thumb2.jpg">
-            
-            <p class="video3">
-                The History of The Entire Universe in 10 Minutes
-            </p>
-            <p class="subscriber3">
-                Aperture
-            </p>
-            <p class="views3">
-                407K views &middot; 11 days ago 
-            </p>
+
+            <div class="recommendation">
+                <img class="video-thumbnail" src="thumbnails/thumb2.jpg">
+                    
+                <p class="video-title">
+                    The History of The Entire Universe in 10 Minutes
+                </p>
+                <p class="subscriber2">
+                    Aperture
+                </p>
+                <p class="views2">
+                    407K views &middot; 11 days ago 
+                </p>
             </div>
+            <div class="recommendation">
+                <img class="video-thumbnail" src="thumbnails/thumb2.jpg">
+                
+                <p class="video-title">
+                    The History of The Entire Universe in 10 Minutes
+                </p>
+                <p class="subscriber3">
+                    Aperture
+                </p>
+                <p class="views3">
+                    407K views &middot; 11 days ago 
+                </p>
+            </div>
+        </div>
     </body>
 </html>
