@@ -1,0 +1,29 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.left {
+    background-color: aliceblue;
+    width: 150px;
+}
+
+.middle {
+    background-color: antiquewhite;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 40px;
+    max-width: 500px;
+}
+
+.textbox {
+ 
+}
+
+.right {
+    background-color: aqua;
+    width: 200px;
+}
