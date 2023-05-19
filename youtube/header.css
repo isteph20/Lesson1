@@ -11,6 +11,14 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(240, 240, 240);
 }
 
 .hamburger-icon {
@@ -40,6 +48,7 @@
     border-color: lightgray;
     border-radius: 4px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05); 
+    width: 0;
 
 }
  /* box shadow inset/outset + horizontal + vertical + blur */
@@ -81,22 +90,27 @@
 
 .right {
     width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
 }
 
 .create-picture {
-    height: 40px;
+    height: 25px;
 }
 
 .apps-picture {
-    height: 40px;
+    height: 25px;
 
 }
 
 .notif-picture{
-    height: 40px;
+    height: 25px;
 }
 
 .youtuber-picture {
-    height: 40px;
+    height: 32px;
     border-radius: 20px;
 }
