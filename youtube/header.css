@@ -73,7 +73,7 @@
 
 }
 
-.search-tooltip {
+.search-icon .tooltip {
     position: absolute;
     background-color: gray;
     color: white;
@@ -81,6 +81,14 @@
     padding-bottom: 4px;
     padding-left: 8px;
     padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+}
+
+.search-icon:hover .tooltip {
+    opacity: 1;
 }
 
 .search-picture {
@@ -94,6 +102,26 @@
     border-radius: 20px;
     border: none;
     background-color: rgb(245, 245, 245);
+    position: relative;
+}
+
+
+.voice-search-icon .tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -42px;
+    opacity: 0;
+}
+
+.voice-search-icon:hover .tooltip {
+    opacity: 1;
 }
 
 .mic-picture {
