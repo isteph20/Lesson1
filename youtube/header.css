@@ -69,6 +69,18 @@
     margin-left: -1px;
     background-color: rgb(240, 240, 240);
     margin-right: 10px;
+    position: relative;
+
+}
+
+.search-tooltip {
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .search-picture {
