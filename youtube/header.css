@@ -58,6 +58,14 @@
     font-family: Roboto, Arial;
     font-size: 16px;
 }
+.search-icon, 
+.voice-search-icon, 
+.tooltip-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .search-icon {
     height: 39px;
@@ -69,11 +77,12 @@
     margin-left: -1px;
     background-color: rgb(240, 240, 240);
     margin-right: 10px;
-    position: relative;
-
 }
 
-.search-icon .tooltip {
+.search-icon .tooltip, 
+.voice-search-icon .tooltip,
+.tooltip-container .tooltip {
+    font-family: Roboto, Arial;
     position: absolute;
     background-color: gray;
     color: white;
@@ -85,9 +94,14 @@
     font-size: 12px;
     bottom: -30px;
     opacity: 0;
+    transition: opacity 0.20s;
+    pointer-events: none;
+    white-space: nowrap;
 }
 
-.search-icon:hover .tooltip {
+.search-icon:hover .tooltip, 
+.voice-search-icon:hover .tooltip,
+.tooltip-container:hover .tooltip{
     opacity: 1;
 }
 
@@ -101,27 +115,7 @@
     width: 40px;
     border-radius: 20px;
     border: none;
-    background-color: rgb(245, 245, 245);
-    position: relative;
-}
-
-
-.voice-search-icon .tooltip {
-    position: absolute;
-    background-color: gray;
-    color: white;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    padding-right: 8px;
-    border-radius: 2px;
-    font-size: 12px;
-    bottom: -42px;
-    opacity: 0;
-}
-
-.voice-search-icon:hover .tooltip {
-    opacity: 1;
+    background-color: rgb(245, 245, 245);    
 }
 
 .mic-picture {
